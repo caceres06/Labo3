@@ -6,6 +6,7 @@
 package labo3;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -25,6 +26,7 @@ public class Cine {
         this.nombre = nombre;
         this.lema = lema;
     }
+    
 
     public String getLema() {
         return lema;
@@ -42,5 +44,19 @@ public class Cine {
         this.nombre = nombre;
     }
     
-    
+ public static void AgregarFuncion(){
+     Scanner scan = new Scanner(System.in);
+     System.out.println("Ingrese el día de la función");
+     String diaFuncion = scan.next();
+     System.out.println("Ingrese el número de la función");
+     int numeFuncion= scan.nextInt();
+     scan.nextLine();
+     ArrayList<Funcion> f= new ArrayList<>();
+     for(int i=0;i<f.size();i++){
+         if(!diaFuncion || numeFuncion !=i) {
+         } else {
+             f.add(new Funcion(diaFuncion,numeFuncion));
+         }
+     }
+    }
 }

@@ -10,12 +10,31 @@ package labo3;
  * @author Dismaelectric
  */
 public class Funcion {
-    String dia;
-    int fucion;
+    private String dia;
+    private int numfucion;
 
-    public Funcion(String dia, int fucion) {
+    public Funcion(String dia, int numfucion) {
         this.dia = dia;
-        this.fucion = fucion;
+        this.numfucion = numfucion;
+    }
+
+    public Funcion() {
+    }
+
+    public String getDia() {
+        return dia;
+    }
+
+    public void setDia(String dia) {
+        this.dia = dia;
+    }
+
+    public int getNumfucion() {
+        return numfucion;
+    }
+
+    public void setNumfucion(int numfucion) {
+        this.numfucion = numfucion;
     }
     
 }
